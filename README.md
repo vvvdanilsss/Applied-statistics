@@ -1,2 +1,2 @@
 # Applied-statistics
-Телеграм чат: https://web.telegram.org/z/#-1774183936
+Телеграм-канал для обсуждения: https://web.telegram.org/z/#-1774183936
