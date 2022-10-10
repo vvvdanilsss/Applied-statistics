@@ -1,5 +1,3 @@
-import itertools
-
 cube = set(range(1, 9))
 k = 1/sum(cube)
 # print(round(k, 3))
