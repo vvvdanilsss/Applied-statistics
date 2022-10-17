@@ -1,7 +1,9 @@
 from itertools import product
 from numpy.random import choice
 
-list_probabilities = [0.2, 0.2, 0, 0.1, 0.05, 0.05, 0.05, 0.1, 0.25]
+list_probabilities = [0.2, 0.2, 0,
+                      0.1, 0.05, 0.05,
+                      0.05, 0.1, 0.25]
 l = 3
 list_table_indexes = list(product(*[range(l)], *[range(l)]))
 marginal_distribution_eta = [0] * l
