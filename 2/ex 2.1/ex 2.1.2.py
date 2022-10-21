@@ -16,7 +16,7 @@ n = 200000000  # будет долго выполнятся, зато хорош
 
 for _ in range(n):
     index = choice(list(range(len(table_indexes))),
-                   p=probabilities_eta_and_xi)  # рандомно выбираем ппару индексов ij с определенной вероятностью
+                   p=probabilities_eta_and_xi)  # рандомно выбираем пару индексов ij с определенной вероятностью
     product_list.append(values_eta[table_indexes[index][0]]
                         * values_xi[
                             table_indexes[index][1]])  # собираем список большого количества произведений эты на кси
