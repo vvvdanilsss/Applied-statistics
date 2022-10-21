@@ -41,7 +41,7 @@ expected_value_xi = mean(choice(values_xi, n, p=marginal_distribution_xi))  # а
 print(f'expected_value_xi = {round(expected_value_xi, 3)}')
 
 pool_eta = choice(values_eta, n,
-                  p=marginal_distribution_eta)  # пул значений эты, полученный рандомно с определеннымия, вычисленными ранее, вероятностями
+                  p=marginal_distribution_eta)  # пул значений эты, полученный рандомно с определенными, вычисленными ранее, вероятностями
 pool_xi = choice(values_xi, n, p=marginal_distribution_xi)  # аналогично для кси
 
 dispersion_eta = mean((pool_eta - mean(pool_eta)) ** 2)
