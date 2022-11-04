@@ -1,0 +1,15 @@
+val_eta = [-7, 7]
+val_xi = [7, 8]
+table = [0.1099999999999, 0.39, 0.39, 0.1099999999999]
+marg_eta = [0.1099999999999 + 0.39, 0.39 + 0.1099999999999]
+marg_xi = [0.1099999999999 + 0.39, 0.39 + 0.1099999999999]
+mean_eta = sum([val_eta[_] * marg_eta[_] for _ in range(2)])
+mean_xi = sum([val_xi[_] * marg_xi[_] for _ in range(2)])
+print(f'mean_eta = {mean_eta}')
+print(f'mean_xi = {mean_xi}')
+mean2_eta = sum([val_eta[_] ** 2 * marg_eta[_] for _ in range(2)])
+disp_eta = mean2_eta - mean_eta ** 2
+print(f'disp_eta = {disp_eta}')
+mean_eta_xi = val_eta[0] * val_xi[0] * table[0] + val_eta[0] * val_xi[1] * table[1] + val_eta[1] * val_xi[0] * table[2] + val_eta[1] * val_xi[1] * table[3]
+cov_eta_xi = mean_eta_xi - mean_eta * mean_xi
+print(f'cov_eta_xi = {cov_eta_xi}')
